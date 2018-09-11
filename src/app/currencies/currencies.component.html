@@ -1,0 +1,7 @@
+<h2>Currencies</h2>
+<ul class="currencies">
+  <li *ngFor="let currency of currencies">
+    <span class="badge">{{currency.id}}</span> {{currency.name}}
+    <span>{{currency.symbol}}</span>
+  </li>
+</ul>
