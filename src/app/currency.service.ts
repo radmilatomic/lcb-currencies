@@ -7,10 +7,15 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class CurrencyService {
-
+	currencies:Currency[]=CURRENCIES
   constructor() { }
   getCurrencies(): Observable<Currency[]> {
-  return of(CURRENCIES);
+  return of(this. currencies);
 }
+
+deleteCurrency(currency:Currency):Observable<Currency[]>{
+  	this.currencies=this.currencies.filter(c=>c!=currency)
+  	return of(this.currencies)
+  }
 
 }

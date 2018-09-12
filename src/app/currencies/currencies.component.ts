@@ -17,6 +17,13 @@ export class CurrenciesComponent implements OnInit {
   this.currencyService.getCurrencies()
       .subscribe(currencies => this.currencies = currencies);
 }
+
+onDelete(currency:Currency):void{
+    console.log("onDelete#currencies is clicked")
+    this.currencyService.deleteCurrency(currency)
+      .subscribe(currencies => this.currencies = currencies);
+  }
+
   ngOnInit() {
   	this.getCurrencies();
   }
