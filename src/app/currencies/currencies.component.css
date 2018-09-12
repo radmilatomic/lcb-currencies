@@ -4,14 +4,19 @@
   color: white;
 }
 .currencies {
+  display:flex;
+  flex-direction: column;
   margin: 0 0 2em 0;
   list-style-type: none;
   padding: 0;
-  width: 15em;
+  
 }
-.currencies li {
+
+.currencies-row{
+  display:flex;
+  justify-content: space-between;
   cursor: pointer;
-  position: relative;
+  
   left: 0;
   background-color: #EEE;
   margin: .5em;
@@ -19,11 +24,20 @@
   height: 1.6em;
   border-radius: 4px;
 }
-.currencies li.selected:hover {
+
+.currencies-row div:nth-child(-n + 2){
+  flex-basis: 35%;
+}
+
+.currencies-row div:nth-last-child(-n + 2){
+  flex-basis: 15%;
+}
+
+.currencies div.selected:hover {
   background-color: #BBD8DC !important;
   color: white;
 }
-.currencies li:hover {
+.currencies div:hover {
   color: #607D8B;
   background-color: #DDD;
   left: .1em;

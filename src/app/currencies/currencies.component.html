@@ -1,7 +1,17 @@
 <h2>Currencies</h2>
-<ul class="currencies">
-  <li *ngFor="let currency of currencies">
-    <span class="badge">{{currency.id}}</span> {{currency.name}}
-    <span>{{currency.symbol}}</span>
-  </li>
-</ul>
+<div class="currencies">
+	<div class="currencies-row">
+		<div>NAME</div>
+    	<div>SYMBOL</div>
+    	<div></div>
+    	<div></div>
+	</div>
+  <div *ngFor="let currency of currencies" class="currencies-row">
+  	
+    	<div>{{currency.name}}</div>
+    	<div>{{currency.symbol}}</div>
+    	<div>EDIT</div>
+    	<div>DELETE</div>
+	
+  </div>
+</div>
