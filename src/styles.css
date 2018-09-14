@@ -12,12 +12,21 @@ h2, h3 {
 }
 body {
   margin: 2em;
+  background-color: #494e6b;
+  color:white;
 }
 body, input[text], button {
-  color: #888;
+  color: #white;
   font-family: Cambria, Georgia;
 }
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
 }/* You can add global styles to this file, and also import other style files */
+
+#title{
+  margin-bottom:2em;
+  text-align:  center;
+  
+
+}

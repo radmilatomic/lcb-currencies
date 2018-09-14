@@ -1,4 +1,5 @@
-<h2>Currencies</h2>
+<div id=currencies-wrapper>
+<div id=currencies-title>Currencies</div>
 <div class="currencies">
 	<div class="currencies-row">
 		<div>NAME</div>
@@ -10,8 +11,9 @@
   	
     	<div>{{currency.name}}</div>
     	<div>{{currency.symbol}}</div>
-    	<div>EDIT</div>
-    	<div (click)="onDelete(currency)">X</div>
+    	<div><fa-icon [icon]="faEdit"></fa-icon></div>
+    	<div (click)="onDelete(currency)"><fa-icon [icon]="faTrash"></fa-icon></div>
 	
   </div>
+</div>
 </div>

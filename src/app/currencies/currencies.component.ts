@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CurrencyService } from '../currency.service';
 import { Currency } from '../currency';
+import { faTrash,faEdit } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-currencies',
@@ -8,7 +9,8 @@ import { Currency } from '../currency';
   styleUrls: ['./currencies.component.css']
 })
 export class CurrenciesComponent implements OnInit {
-
+  faTrash = faTrash;
+  faEdit=faEdit;
 	currencies:Currency[];
 	
   constructor(private currencyService: CurrencyService) { }
