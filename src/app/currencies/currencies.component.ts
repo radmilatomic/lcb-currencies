@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CurrencyService } from '../currency.service';
 import { Currency } from '../currency';
-import { faTrash,faEdit } from '@fortawesome/free-solid-svg-icons';
+import { faTrash,faEdit,faPlus,faTimes,faCheck } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-currencies',
@@ -11,6 +11,9 @@ import { faTrash,faEdit } from '@fortawesome/free-solid-svg-icons';
 export class CurrenciesComponent implements OnInit {
   faTrash = faTrash;
   faEdit=faEdit;
+  faPlus=faPlus;
+  faTimes=faTimes;
+  faCheck=faCheck;
 	currencies:Currency[];
   showForm=false;
   addedCurrencyName:string;

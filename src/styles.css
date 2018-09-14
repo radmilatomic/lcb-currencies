@@ -30,3 +30,33 @@ body, input[text], button {
   
 
 }
+input{
+    padding: 8px; 
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    background-color: #494e6b; 
+    color: white; 
+    margin:5px;
+    
+}
+button{
+    padding: 4px; 
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    background-color: #494e6b; 
+    color: white; 
+    margin:5px;
+    
+}
+
+#app-wrapper{
+display:flex;
+flex-direction:column;
+margin:auto;
+max-width:700px;
+ 
+}
+a{
+  text-decoration: none;
+  color:white;
+}

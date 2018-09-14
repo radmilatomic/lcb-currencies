@@ -1,9 +1,14 @@
-/* HeroesComponent's private CSS styles */
+
 #currencies-wrapper{
+
   border:solid 1px;
+  border-radius: 20px;
+
+  
 }
 #currencies-title{
   margin-left:2em;
+  margin-top:1em;
 }
 .selected {
   background-color: #CFD8DC !important;
@@ -14,9 +19,10 @@
   flex-direction: column;
   margin: 2em;
   list-style-type: none;
-  padding: 0;
+  padding: 10px;
   border:solid 1px;
-  max-width: 600px;
+  border-radius: 20px;
+  
   
 }
 
@@ -45,30 +51,40 @@
   flex-basis: 15%;
 }
 
-/*.currencies div.selected:hover {
-  background-color: #BBD8DC !important;
-  color: white;
-}*/
-/*.currencies div:hover {
-  color: #607D8B;
-  background-color: #DDD;
-  left: .1em;
-}*/
-/*.currencies .text {
-  position: relative;
-  top: -3px;
-}*/
-/*.currencies .badge {
-  display: inline-block;
-  font-size: small;
-  color: white;
-  padding: 0.8em 0.7em 0 0.7em;
-  background-color: #607D8B;
-  line-height: 1em;
-  position: relative;
-  left: -1px;
-  top: -4px;
-  height: 1.8em;
-  margin-right: .8em;
-  border-radius: 4px 0 0 4px;
-}*/
+.currencies-row div{
+  margin-left:5px;
+}
+
+#add-currency{
+  
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  margin-right: 20px;
+  
+}
+
+#confirm-add{
+  background-color: #4abdac
+}
+#undo-add{
+  background-color: #813772
+}
+
+fa-icon{
+  padding:20px;
+  cursor:pointer;
+}
+#symbol-input{
+  width:60px;
+}
+#buttons-wrapper{
+  display:flex;
+  justify-content: flex-end;
+}
+#link-2-home{
+  width:100%;
+  text-align:center;
+  padding-bottom: 5px;
+}
+

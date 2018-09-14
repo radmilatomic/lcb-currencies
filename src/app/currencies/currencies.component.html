@@ -1,12 +1,12 @@
 <div id=currencies-wrapper>
 <div id=currencies-title>Currencies</div>
-<div>
-  <div><button (click)="showAddForm()">Add new</button></div>
+<div id="add-currency">
+  <div><div (click)="showAddForm()">Add new currency<fa-icon [icon]="faPlus"></fa-icon></div></div>
   <div *ngIf="showForm">
-  <div><input (keyup)="onKeyName($event)" placeholder="name"/><input (keyup)="onKeySymbol($event)" placeholder="symbol"/></div>
-  <div>
-    <button (click)="hideAddForm()">no</button>
-    <button (click)="addEntry()">add</button>
+  <div><input (keyup)="onKeyName($event)" placeholder="name"/><input id="symbol-input"(keyup)="onKeySymbol($event)" placeholder="symbol"/></div>
+  <div id="buttons-wrapper">
+    <button id="undo-add" (click)="hideAddForm()"><fa-icon [icon]="faTimes"></fa-icon></button>
+    <button id="confirm-add" (click)="addEntry()"><fa-icon [icon]="faCheck"></fa-icon></button>
   </div>
 </div>
 </div>
@@ -26,4 +26,5 @@
 	
   </div>
 </div>
+<div id="link-2-home"><a routerLink='/'>HOME</a></div>
 </div>
