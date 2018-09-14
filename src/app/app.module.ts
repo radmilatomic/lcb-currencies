@@ -4,8 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CurrenciesComponent } from './currencies/currencies.component';
-import { HomeComponent } from './home/home.component';
-import { AppRoutingModule } from './/app-routing.module';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
@@ -13,13 +12,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   declarations: [
     AppComponent,
     CurrenciesComponent,
-    HomeComponent,
+    
     
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
+    
     FontAwesomeModule
   ],
   providers: [],
