@@ -1,5 +1,15 @@
 <div id=currencies-wrapper>
 <div id=currencies-title>Currencies</div>
+<div>
+  <div><button (click)="showAddForm()">Add new</button></div>
+  <div *ngIf="showForm">
+  <div><input (keyup)="onKeyName($event)" placeholder="name"/><input (keyup)="onKeySymbol($event)" placeholder="symbol"/></div>
+  <div>
+    <button (click)="hideAddForm()">no</button>
+    <button (click)="addEntry()">add</button>
+  </div>
+</div>
+</div>
 <div class="currencies">
 	<div class="currencies-row">
 		<div>NAME</div>

@@ -18,4 +18,9 @@ deleteCurrency(currency:Currency):Observable<Currency[]>{
   	return of(this.currencies)
   }
 
+  addCurrency(currency:Currency):Observable<Currency[]>{
+  	this.currencies.push(currency);
+  	return of(this.currencies)
+  }
+
 }

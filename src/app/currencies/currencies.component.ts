@@ -12,6 +12,9 @@ export class CurrenciesComponent implements OnInit {
   faTrash = faTrash;
   faEdit=faEdit;
 	currencies:Currency[];
+  showForm=false;
+  addedCurrencyName:string;
+  addedCurrencySymbol:string;
 	
   constructor(private currencyService: CurrencyService) { }
   
@@ -29,5 +32,39 @@ onDelete(currency:Currency):void{
   ngOnInit() {
   	this.getCurrencies();
   }
+
+  showAddForm(): void {
+    this.showForm=true;
+
+    
+  
+}
+
+hideAddForm(): void {
+    this.showForm=false;
+  }
+
+  onKeyName(event:any){
+      this.addedCurrencyName=event.target.value
+  }
+
+  onKeySymbol(event:any){
+      this.addedCurrencySymbol=event.target.value
+  }
+  
+  addEntry():void{
+    var addedCurrency:Currency={
+    id:1,
+    name:this.addedCurrencyName,
+    symbol:this.addedCurrencySymbol
+  };
+    console.log("addEntry#currencies is clicked")
+    this.currencyService.addCurrency(addedCurrency)
+      .subscribe(currencies => this.currencies = currencies);
+      this.hideAddForm();
+
+  }
+
+
 
 }

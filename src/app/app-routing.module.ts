@@ -5,8 +5,8 @@ import { CurrenciesComponent }      from './currencies/currencies.component';
 import { HomeComponent }      from './home/home.component';
 
 const routes: Routes = [
-  { path: 'currencies', component: CurrenciesComponent },
-  { path: '', component: HomeComponent }
+  { path:'currencies', component: CurrenciesComponent },
+  { path:'', component: HomeComponent }
 ];
 
 @NgModule({

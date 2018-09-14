@@ -20,6 +20,10 @@
   
 }
 
+.currencies-row:first-child{
+  background-color: #6d7993;
+}
+
 .currencies-row{
   display:flex;
   justify-content: space-between;

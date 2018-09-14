@@ -7,12 +7,14 @@ import { CurrenciesComponent } from './currencies/currencies.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AddCurrencyComponent } from './add-currency/add-currency.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CurrenciesComponent,
-    HomeComponent
+    HomeComponent,
+    AddCurrencyComponent
   ],
   imports: [
     BrowserModule,
