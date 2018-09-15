@@ -1,30 +1,28 @@
 <div id=currencies-wrapper>
-<div id=currencies-title>Currencies</div>
-<div id="add-currency">
-  <div><div (click)="showAddForm()">Add new currency<fa-icon [icon]="faPlus"></fa-icon></div></div>
-  <div *ngIf="showForm">
-  <div><input (keyup)="onKeyName($event)" placeholder="name"/><input id="symbol-input"(keyup)="onKeySymbol($event)" placeholder="symbol"/></div>
-  <div id="buttons-wrapper">
-    <button id="undo-add" (click)="hideAddForm()"><fa-icon [icon]="faTimes"></fa-icon></button>
-    <button id="confirm-add" (click)="addEntry()"><fa-icon [icon]="faCheck"></fa-icon></button>
-  </div>
-</div>
-</div>
-<div class="currencies">
-	<div class="currencies-row">
-		<div>NAME</div>
-    	<div>SYMBOL</div>
-    	<div></div>
-    	<div></div>
-	</div>
-  <div *ngFor="let currency of currencies" class="currencies-row">
-  	
-    	<div>{{currency.name}}</div>
-    	<div>{{currency.symbol}}</div>
-    	<div><fa-icon [icon]="faEdit"></fa-icon></div>
-    	<div (click)="onDelete(currency)"><fa-icon [icon]="faTrash"></fa-icon></div>
-	
-  </div>
-</div>
-
+    <div id=currencies-title>Currencies</div>
+    <div id="add-currency">
+        <div><div (click)="showAddForm()">Add new currency<fa-icon [icon]="faPlus"></fa-icon></div></div>
+        <div *ngIf="showForm">
+            <div><input [(ngModel)]="inputName"  placeholder="name"/><input  [(ngModel)]="inputSymbol" id="symbol-input" placeholder="symbol"/>
+            </div>
+            <div id="buttons-wrapper">
+                <button id="undo-add" (click)="hideAddForm()"><fa-icon [icon]="faTimes"></fa-icon></button>
+                <button id="confirm-add" (click)="addEntry()"><fa-icon [icon]="faCheck"></fa-icon></button>
+            </div>
+        </div>
+    </div>
+    <div class="currencies">
+    	<div class="currencies-row">
+    		  <div>NAME</div>
+        	<div>SYMBOL</div>
+        	<div></div>
+        	<div></div>
+    	</div>
+      <div *ngFor="let currency of currencies" class="currencies-row">
+        	<div>{{currency.name}}</div>
+        	<div>{{currency.symbol}}</div>
+        	<div><fa-icon [icon]="faEdit"></fa-icon></div>
+        	<div (click)="onDelete(currency)"><fa-icon [icon]="faTrash"></fa-icon></div>
+      </div>
+    </div>
 </div>

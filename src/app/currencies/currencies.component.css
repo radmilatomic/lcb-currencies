@@ -1,19 +1,14 @@
 
 #currencies-wrapper{
-
   border:solid 1px;
   border-radius: 20px;
-
-  
 }
+
 #currencies-title{
   margin-left:2em;
   margin-top:1em;
 }
-.selected {
-  background-color: #CFD8DC !important;
-  color: white;
-}
+
 .currencies {
   display:flex;
   flex-direction: column;
@@ -22,8 +17,6 @@
   padding: 10px;
   border:solid 1px;
   border-radius: 20px;
-  
-  
 }
 
 .currencies-row:first-child{
@@ -33,7 +26,6 @@
 .currencies-row{
   display:flex;
   justify-content: space-between;
-
   color:white;
   left: 0;
   background-color: #98878f;
@@ -56,17 +48,16 @@
 }
 
 #add-currency{
-  
   display:flex;
   flex-direction:column;
   align-items:flex-end;
   margin-right: 20px;
-  
 }
 
 #confirm-add{
   background-color: #4abdac
 }
+
 #undo-add{
   background-color: #813772
 }
@@ -75,9 +66,11 @@ fa-icon{
   padding:20px;
   cursor:pointer;
 }
+
 #symbol-input{
   width:60px;
 }
+
 #buttons-wrapper{
   display:flex;
   justify-content: flex-end;
