@@ -2,26 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
 
-## Development server
+## Installation instructions
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Download the folder form `https://github.com/radmilatomic/lcb-currencies.git`<br>
+- Make sure you have npm or yarn package manager installed<br>
+- In cmd navigate to lcb-currencies folder and run `npm install` or `yarn install`<br>
+- Make sure you have Angular CLI installed<br>
+- Run `ng serve --open` <br>
+- App will be served on  `http://localhost:4200/`
+- If you want to see final application hosted on github, visit [`https://radmilatomic.github.io/lcb-currencies/`](https://radmilatomic.github.io/lcb-currencies/)
 
-## Code scaffolding
+## Application status
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Application shows predefined currency data list 
+- Angular component is used for showing currencies data
+- Services are used for getting, deleting and adding new data to currencies
+- Edit currency feature not implemented
+- Http requests simulation not implemented
